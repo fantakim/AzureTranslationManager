@@ -24,6 +24,6 @@ jobs:
     - name: Publish AzureTranslationManager
       uses: rohith/publish-nuget@v2
       with:
-          PROJECT_FILE_PATH: AzureTranslationManagerd/AzureTranslationManager.csproj
+          PROJECT_FILE_PATH: AzureTranslationManager/AzureTranslationManager.csproj
           VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}  
